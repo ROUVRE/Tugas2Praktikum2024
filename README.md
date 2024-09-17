@@ -1,23 +1,23 @@
 # Tugas Pertemuan 2
 
-Fork dan clone repository ini, lalu jalankan perintah 
-```
-flutter pub get
-```
-Buatlah tampilan form yang berisi nama, nim, dan tahun lahir pada file `ui/form_data.dart`, lalu buatlah tampilan hasil dari input data tersebut pada file `ui/tampil_data.dart`
+Nama : Reyno Alfarez Marchelian
 
-JELASKAN PROSES PASSING DATA DARI FORM MENUJU TAMPILAN DENGAN FILE `README.md`
+NIM : H1D022111
 
-Buat tampilan semenarik mungkin untuk dilihat.
+Shift Baru: B
 
+## Penjelasan
 
-Nama : ___
-
-NIM : ___
-
-Shift Baru: ___
-
-## Screenshot
-Contoh :
 ![Lampiran Form](form.png)
+
+Data-data yang diinput di dalam kolom form akan disimpan oleh kelas TextEditingController dan disimpan sesuai variabel-variabel yang dibuat ketika user menekan tombol 'Simpan'
+(Kolom Nama di variabel 'nama', NIM di variabel 'nim', dan Tahun di variabel 'tahun'). Kemudian user akan dibawa ke halaman kedua untuk menampilkan data yang sudah dimasukkan.
+
 ![Lampiran Hasil](hasil.png)
+
+Data-data yang dimasukkan ke variabel masing-masing akan dimunculkan di halaman ini, namun terdapat variabel baru yaitu 'umur' yang berfungsi untuk menampilkan umur user
+berdasarkan tahun lahir yang dimasukkan user dengan cara mengurangi tahun sekarang dengan variabel 'tahun' pada baris kode berikut:
+
+```
+final int umur = DateTime.now().year - tahun;
+```
