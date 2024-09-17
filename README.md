@@ -15,7 +15,7 @@ Data-data yang diinput di dalam kolom form akan disimpan oleh kelas TextEditingC
 
 ![Lampiran Hasil](screenshot_hasil.png)
 
-Data-data yang dimasukkan ke variabel masing-masing akan dimunculkan di halaman ini, namun terdapat variabel baru yaitu 'umur' yang berfungsi untuk menampilkan umur user
+Data-data yang dimasukkan ke variabel masing-masing akan dimunculkan di halaman ini, namun terdapat variabel baru yaitu 'umur' yang berfungsi untuk menampilkan usia user
 berdasarkan tahun lahir yang dimasukkan user dengan cara mengurangi tahun sekarang dengan variabel 'tahun' pada baris kode berikut:
 
 ```
